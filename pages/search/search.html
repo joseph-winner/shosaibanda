@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shosa: Welcome</title>
+    <link rel="shortcut icon" type="image/jpeg" href="./images/logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+
+    <!--NAV BAR  -->
+    <nav>
+        <div class="humberger">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="nav-items">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Updates</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <h2>SHOSA</h2>
+        </div>
+      </nav>
+      <!-- main nav bar end -->
+
+      <!-- side nav start -->
+      <div class="side-nav">
+        <span class="close-btn"><i class="fa fa-close"></i></span>
+        <a href="#">Home</a>
+        <a href="#">Updates</a>
+        <a href="#">Profile</a>
+        <a href="#">About</a>
+      </div>
+      <!-- side nav end -->
+    <!--NAV BAR  -->
+
+    <!-- STYLE -->
+    <style>
+        .admin-card-holder{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.admin-section{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 20px;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     padding: 30px 15px;
+     border-radius: 15px;
+}
+
+.danger-message{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin: 0px 10px;
+     padding: 30px 15px;
+     border-radius: 15px;
+}
+
+.admin-section input:hover, .admin-section input:active, .admin-section input:visited{
+        outline: none;
+}
+
+.admin-section input{
+    outline: none;
+    border: 1px solid #111;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.admin-section button{
+    background: none;
+    outline: none;
+    border: none;
+    background-color: #02899C;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.profile-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 5px;
+}
+
+
+.user-profile-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.profile-holder img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.personal-info-profile, .kin-info-profile, .photos-section{
+    padding: 15px 10px;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 6px;
+}
+
+.user-details--list{
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.user-info-details h3{
+    text-align: center;
+    
+    margin-top: 5px;
+}
+
+.kin-personal-info-cols-1, .user-personal-info-cols-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 25px;
+}
+
+.kin-personal-info-cols-1 h5, .user-personal-info-cols-1 h5{
+    font-size: 18px;
+}
+    </style>
+    <!-- STYLE -->
+
+   
+<!-- SEARCH -->
+<section class="admin-card-holder">
+    <article class="admin-section">
+        <div class="avater">
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/eszyyflr.json"
+                    trigger="hover"
+                    style="width:80px;height:80px">
+                </lord-icon>
+        </div>
+        <h2>Enter Your User Name</h2>
+        <input type="name" name="name" id="searchname" placeholder="Enter Registered Name" required>
+        <button class="search-btn">Search</button>
+    </article>  
+</section>
+<article class="profile-holder">
+    
+</article>    
+<!-- SEARCH -->
+    
+
+    
+    <!-- FIXEDD BUTTONS -->
+    <div class="fixed-bottom">
+      <div class="search-btn" title="Search Profile">
+        <a href="/index.html"><i class="fa fa-home"></i></a>
+      </div>
+      <div class="register-profile" title="See Profiles">
+        <i class="fa fa-users"></i>
+      </div>
+      <div class="register-acount" title="Register SHOSA Account">
+        <i class="fa fa-plus"></i>
+      </div>
+    </div>
+    <!-- FIXEDD BUTTONS -->
+</body>
+<!-- <script src="./API/jquerry.js"></script> -->
+<!-- <script type="module" src="./index.js"></script> -->
+<script type="module" src="./search.js"></script>
+</html>

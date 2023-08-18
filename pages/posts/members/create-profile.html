@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shosa: Welcome</title>
+    <link rel="shortcut icon" type="image/jpeg" href="/images/logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  
+    <!-- PROFILES -->
+    <div class="create-shosa-profiles">
+      <div class="home-back-btn">
+        <a href="/index.html"><i class="fa fa-chevron-left"></i></a>
+      </div>
+      <style>
+        .home-back-btn{
+          position: absolute;
+          left: 10px;
+          top: 5px;
+        }
+        .home-back-btn a{
+          display: block;
+          width: 30px;
+          text-align: center;
+          background-color: #45a049;
+          color: #fff;
+          font-size: 22px;
+          font-weight: 500;
+        }
+        .form-container {
+          max-width: 400px;
+          margin: 0 auto;
+          margin-top: 30px;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          margin-top: 80px;
+        }
+    
+        .form-container h2 {
+          text-align: center;
+        }
+    
+        .form-container input[type="text"],
+        .form-container input[type="tel"],
+        .form-container input[type="email"],
+        .form-container input[type="file"],
+        .form-container input[type="submit"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+        }
+    
+        .form-container input[type="submit"] {
+          background-color: #4CAF50;
+          color: white;
+          cursor: pointer;
+        }
+    
+        .form-container input[type="submit"]:hover {
+          background-color: #45a049;
+        }
+
+        #photoLabel{
+          display: block;
+          margin-top: 10px;
+          width: 150px;
+          margin-bottom: 20px;
+          text-align: center;
+          background-color: #45a049;
+          color: #fff;
+          font-weight: 500;
+          border-radius: 8px;
+          padding: 8px 15px;
+        }
+
+        #sample-image{
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          border: 2px solid #45a049;
+          object-fit: cover;
+          margin-bottom: 20px;
+        }
+        .create-shosa-profiles{
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+        }
+      </style>
+      <div class="form-container">
+        <h2>Create SHOSA Profile</h2>
+        <form>
+          <img src="" alt="profile photo" id="sample-image" style="display: none;">
+          <label for="photo" id="photoLabel">Select <i class="fa fa-photo"></i></label>
+          <input type="file" name="photo" id="photo" accept="image/*" required style="display: none;">
+          <input type="text" name="name" id="names" placeholder="Enter Full Names" required>
+          <input type="tel" name="contact" id="phone" placeholder="Enter WhatsApp Number" required>
+          <input type="email" name="email" id="email" placeholder="Enter Email Address" required>
+          <input type="text" name="years" id="year" placeholder="Enter Years at Standard" required>
+          <input type="submit" id="createProfile" value="Submit">
+        </form>
+      </div>
+    </div>
+    <!-- PROFILES -->
+
+    <!-- REDIRECT PAGE -->
+    <style>
+      .success-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.success-message h2 {
+  color: #27ae60;
+}
+
+.success-message p {
+  margin-bottom: 20px;
+}
+
+.success-message button a {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.success-message button a:hover {
+  background-color: #1e8449;
+}
+    </style>
+    <div class="success-message" style="display: none; margin-top: 80px;">
+      <h2>Registration Successful!</h2>
+      <p>Thank you <span class="registered-name"></span> for registering your profile on SHOSA.</p>
+      <button> <a href="/index.html">Continue</a></button>
+    </div>
+    <!-- REDIRECT PAGE -->
+</body>
+<script src="./API/jquerry.js"></script>
+<script src="./index.js"></script>
+<script type="module" src="./profiles.js"></script>
+</html>
